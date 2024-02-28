@@ -1,0 +1,64 @@
+:root {
+    --width:1000px
+}
+
+body {
+    padding:0;
+    margin:0
+}
+
+.container {
+    background-color: white;
+    border:1px solid black;
+    padding:0.5em
+}
+
+#wrapper {
+    max-width:var(--width);
+    margin:2em auto;
+}
+
+header {
+    margin-bottom:0.5em;
+    padding-left:25%
+}
+
+footer {
+    margin-top:0.5em;
+    padding-left:25%;
+    text-align:center
+}
+
+#content {
+    display:flex
+}
+
+aside {
+    width:25%
+}
+
+main {
+    flex-grow:1
+}
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 768px) {
+
+    #wrapper {
+        padding:0.25em
+    }
+
+    #content {
+        flex-wrap:wrap
+    }
+
+    aside, main {
+        display:block;
+        width:100%
+    }
+
+    header, footer {
+        padding: 0 ;
+    }
+}
